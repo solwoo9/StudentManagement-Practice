@@ -8,7 +8,7 @@ interface StudentRepository {
     // 학생정보 저장
     void save(Student student);
     // 학생정보 수정
-    void update(int id, Student updatedStudent);
+    Student update(int id, Student updatedStudent);
     // 학생정보 삭제
-    void delete(int id);
+    boolean delete(int id);
 }
