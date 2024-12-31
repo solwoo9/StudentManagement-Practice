@@ -10,5 +10,5 @@ interface StudentRepository {
     // 학생정보 수정
     Student update(int id, Student updatedStudent);
     // 학생정보 삭제
-    boolean delete(int id);
+    void delete(int id);
 }

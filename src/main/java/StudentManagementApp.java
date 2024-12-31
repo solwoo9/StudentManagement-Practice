@@ -2,10 +2,9 @@ import java.util.Scanner;
 
 public class StudentManagementApp {
     public static void main(String[] args) {
-        StudentRepositoryImpl repository = new StudentRepositoryImpl();
+        StudentRepository repository = new StudentRepositoryImpl();
         StudentView view = new StudentView();
         StudentController controller = new StudentController(repository, view);
-
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("1. 학생 추가\n2. 학생 수정\n3. 학생 삭제\n4. 학생 조회\n5. 모든 학생 조회\n6. 종료");
